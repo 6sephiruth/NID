@@ -183,7 +183,7 @@ class AnomalyDetector(Model):
         self.decoder = tf.keras.Sequential([
             layers.Dense(64, activation="relu"),                        
             layers.Dense(128, activation="relu"),
-            layers.Dense(40, activation="sigmoid"),
+            layers.Dense(40, activation="relu"),
         
         ])
 
